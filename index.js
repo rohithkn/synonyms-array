@@ -1,2 +1,3 @@
-const lib=require('./lib/main')
-exports.get = lib.getSynonyms
+const lib = require('./lib/main');
+const get = lib.getSynonyms;
+module.exports = { get }

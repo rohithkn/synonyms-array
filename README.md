@@ -10,3 +10,8 @@ $ npm install synonyms-array
 ```
 
 ### Example
+
+```
+const synonymsArray = require('synonyms-array');
+console.log(synonymsArray.get('node'));
+```

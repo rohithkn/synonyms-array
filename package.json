@@ -1,6 +1,6 @@
 {
   "name": "synonyms-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "56122 unique words arranged as 38957 synonyms groups",
   "main": "index.js",
   "scripts": {
