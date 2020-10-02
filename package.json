@@ -1,0 +1,31 @@
+{
+  "name": "synonyms",
+  "version": "1.0.0",
+  "description": "56122 unique words arranged as 38957 synonyms groups",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohithkn/synonyms.git"
+  },
+  "keywords": [
+    "synonyms",
+    "dictionary",
+    "meaning",
+    "chatbot",
+    "vocabulary",
+    "bot",
+    "meanings",
+    "synonym",
+    "simple",
+    "chat"
+  ],
+  "author": "Rohith K N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohithkn/synonyms/issues"
+  },
+  "homepage": "https://github.com/rohithkn/synonyms#readme"
+}
