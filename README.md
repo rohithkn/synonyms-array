@@ -1,5 +1,5 @@
 # synonyms-array
-56122 unique words arranged as 38957 synonyms groupsr.
+56122 unique words arranged as 38957 synonyms groups.
 
 ### Installation
 
