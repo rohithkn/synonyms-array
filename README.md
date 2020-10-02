@@ -17,7 +17,8 @@ console.log(synonymsArray.get('node'));
 ```
 Output
 
-```[
+```
+[
   'boss',         'node',
   'thickening',   'pommel',
   'knob',         'guest',
