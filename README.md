@@ -15,3 +15,16 @@ $ npm install synonyms-array
 const synonymsArray = require('synonyms-array');
 console.log(synonymsArray.get('node'));
 ```
+Output
+
+```[
+  'boss',         'node',
+  'thickening',   'pommel',
+  'knob',         'guest',
+  'client',       'invitee',
+  'inspissation', 'thickener',
+  'symptom',      'bubonic',
+  'customer',     'nodulated',
+  'noduled',      'unshapely',
+  'nodular'
+]```
