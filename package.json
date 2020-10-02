@@ -1,5 +1,5 @@
 {
-  "name": "synonyms",
+  "name": "synonyms-array",
   "version": "1.0.0",
   "description": "56122 unique words arranged as 38957 synonyms groups",
   "main": "index.js",
@@ -8,9 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rohithkn/synonyms.git"
+    "url": "git+https://github.com/rohithkn/synonyms-array.git"
   },
   "keywords": [
+    "synonyms-array",
     "synonyms",
     "dictionary",
     "meaning",
@@ -25,7 +26,7 @@
   "author": "Rohith K N",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rohithkn/synonyms/issues"
+    "url": "https://github.com/rohithkn/'synonyms-array/issues"
   },
-  "homepage": "https://github.com/rohithkn/synonyms#readme"
+  "homepage": "https://github.com/rohithkn/'synonyms-array#readme"
 }
