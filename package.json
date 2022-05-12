@@ -2,9 +2,15 @@
   "name": "synonyms-array",
   "version": "1.0.1",
   "description": "56122 unique words arranged as 38957 synonyms groups",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "clean": "rimraf './dist'",
+    "compile": "npm run clean && tsc",
+    "fmt": "prettier --write . && eslint --fix .",
+    "lint": "eslint .",
+    "test": "jest . --watchAll"
   },
   "repository": {
     "type": "git",
@@ -28,5 +34,21 @@
   "bugs": {
     "url": "https://github.com/rohithkn/'synonyms-array/issues"
   },
-  "homepage": "https://github.com/rohithkn/'synonyms-array#readme"
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/rohithkn/synonyms-array#readme",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "ts-jest": "^28.0.2",
+    "typescript": "^4.6.4"
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "dependencies": {}
 }

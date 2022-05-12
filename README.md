@@ -1,7 +1,8 @@
-# synonyms-array
+# Synonyms-array
+
 56122 unique words arranged as 38957 synonyms groups.
 
-### Installation
+## Installation
 
 Install the dependencies and devDependencies and start the server.
 
@@ -9,12 +10,13 @@ Install the dependencies and devDependencies and start the server.
 $ npm install synonyms-array
 ```
 
-### Example
+## Example Usage
 
 ```
 const synonymsArray = require('synonyms-array');
 console.log(synonymsArray.get('node'));
 ```
+
 Output
 
 ```
