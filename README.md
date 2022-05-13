@@ -4,11 +4,14 @@
 
 ## Installation
 
-Install the dependencies and devDependencies and start the server.
-
 ```
 $ npm install synonyms-array
 ```
+
+## Methods
+
+- `get`: Retrieves the synonym of the given word
+- `search`: Searches in the library for all the words matching the substring
 
 ## Example Usage
 

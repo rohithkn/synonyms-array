@@ -18,3 +18,13 @@ export const get = (word: string): string[] => {
 
   return [];
 };
+
+/**
+ * Search for a specific substring to see if it's in the synonym list.
+ * @param substring
+ */
+export const search = (substring: string): string[] => {
+  return getSynonymGroups()
+    .map((g) => g.filter((w) => w.includes(substring)))
+    .flat(1);
+};

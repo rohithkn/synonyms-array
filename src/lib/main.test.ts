@@ -1,6 +1,6 @@
 import fileSynonyms from './synonyms.json';
 import * as main from './main';
-import { get, getSynonymGroups } from './main';
+import { get, getSynonymGroups, search } from './main';
 
 beforeEach(() => {
   jest.resetModules();
@@ -56,6 +56,47 @@ describe('get', () => {
 
       // Assert
       expect(result).toEqual(expectedSynonyms);
+    });
+  });
+});
+
+describe('search', () => {
+  const testData = [
+    {
+      substring: 'a',
+      synonyms: [],
+      expectedWords: [],
+    },
+    {
+      substring: 'abc',
+      synonyms: [
+        ['ab', 'ba', 'ca', 'ec'],
+        ['abc', 'cbaabc', 'aab'],
+        ['a', 'b', 'c'],
+      ],
+      expectedWords: ['abc', 'cbaabc'],
+    },
+    {
+      substring: 'node',
+      synonyms: [
+        ['node', 'nodejs', 'ruby'],
+        ['ruby', 'python'],
+        ['backnode', 'backbone']
+      ],
+      expectedWords: ['node', 'nodejs', 'backnode'],
+    },
+  ];
+
+  testData.forEach(({ substring, expectedWords, synonyms }) => {
+    it(`returns '${expectedWords.join(', ')}' on input '${substring}'`, () => {
+      // Arrange
+      jest.spyOn(main, 'getSynonymGroups').mockReturnValue(synonyms);
+
+      // Act
+      const result = search(substring);
+
+      // Assert
+      expect(result).toEqual(expectedWords);
     });
   });
 });

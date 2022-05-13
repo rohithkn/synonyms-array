@@ -1,1 +1,1 @@
-export { get } from './lib/main';
+export { get, search } from './lib/main';
